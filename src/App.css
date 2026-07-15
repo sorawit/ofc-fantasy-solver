@@ -333,6 +333,19 @@ header h1 {
 }
 
 @media (max-width: 640px) {
+  .app {
+    padding: 20px 12px 60px;
+  }
+
+  .picker {
+    padding: 10px;
+  }
+
+  .grid,
+  .grid-row {
+    gap: 4px;
+  }
+
   .cell-rank {
     font-size: 11px;
   }
@@ -345,11 +358,31 @@ header h1 {
     border-radius: 5px;
   }
 
+  /* Restack each result row: "Label · Hand Name +N" on top, cards below. */
   .row {
     flex-wrap: wrap;
+    gap: 2px 6px;
+    padding: 7px 0;
+  }
+
+  .row-label {
+    width: auto;
+    order: 0;
+  }
+
+  .row-name {
+    order: 1;
+    font-size: 13px;
+  }
+
+  .row-royalty {
+    order: 2;
+    font-size: 13px;
   }
 
   .row-cards {
+    order: 3;
+    flex-basis: 100%;
     width: auto;
   }
 }
