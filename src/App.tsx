@@ -149,9 +149,7 @@ export default function App() {
             <span className={`count ${selected.length >= MIN_CARDS ? 'ready' : ''}`}>
               {selected.length < MIN_CARDS
                 ? `${selected.length}/${MIN_CARDS}`
-                : selected.length === MIN_CARDS
-                  ? '13 cards'
-                  : `${selected.length} cards · discard ${selected.length - MIN_CARDS}`}
+                : `${selected.length} cards`}
             </span>
             <button
               className="btn"
