@@ -237,6 +237,17 @@ export default function App() {
           ))}
         </section>
       )}
+
+      <footer className="footer">
+        made with ❤️ by{' '}
+        <a href="https://github.com/sorawit" target="_blank" rel="noopener noreferrer">
+          swit
+        </a>{' '}
+        ·{' '}
+        <a href="https://twitter.com/nomorebear" target="_blank" rel="noopener noreferrer">
+          @nomorebear
+        </a>
+      </footer>
     </div>
   )
 }
