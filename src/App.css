@@ -80,16 +80,16 @@ header h1 {
 .cell.diamond { color: var(--diamond); }
 .cell.club { color: var(--club); }
 
+/* Selection ring uses an inset shadow, not border-width, so cell size
+   (and therefore column alignment across rows) never changes. */
 .cell.selected {
   transform: none;
-  border-width: 2px;
-  box-shadow: none;
 }
 
-.cell.selected.spade { background: #e9edf5; border-color: var(--spade); }
-.cell.selected.heart { background: #fdeaeb; border-color: var(--heart); }
-.cell.selected.diamond { background: #e8f0fc; border-color: var(--diamond); }
-.cell.selected.club { background: #e7f5ed; border-color: var(--club); }
+.cell.selected.spade { background: #e9edf5; border-color: var(--spade); box-shadow: inset 0 0 0 1px var(--spade); }
+.cell.selected.heart { background: #fdeaeb; border-color: var(--heart); box-shadow: inset 0 0 0 1px var(--heart); }
+.cell.selected.diamond { background: #e8f0fc; border-color: var(--diamond); box-shadow: inset 0 0 0 1px var(--diamond); }
+.cell.selected.club { background: #e7f5ed; border-color: var(--club); box-shadow: inset 0 0 0 1px var(--club); }
 
 /* --- Controls --- */
 
