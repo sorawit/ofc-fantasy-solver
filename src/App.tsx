@@ -239,7 +239,17 @@ export default function App() {
       )}
 
       <footer className="footer">
-        <span>made with ❤️ by swit</span>
+        <span>
+          made with ❤️ by{' '}
+          <a
+            className="author"
+            href="https://sorawit.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            swit
+          </a>
+        </span>
         <a
           href="https://github.com/sorawit"
           target="_blank"

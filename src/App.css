@@ -354,6 +354,16 @@ header h1 {
   color: var(--accent);
 }
 
+.footer a.author {
+  display: inline;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a.author:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .app {
     padding: 20px 12px 60px;
